@@ -1,4 +1,4 @@
-﻿// exemplo microsoft learn media de alunos
+int currentAssignments = 5;
 
 int sophia1 = 93;
 int sophia2 = 87;
@@ -24,11 +24,20 @@ int jeong3 = 98;
 int jeong4 = 100;
 int jeong5 = 97;
 
-int sophiaSum = 0;
-int nocolasSum = 0;
-int zahirahSum = 0;
-int jeongSum = 0;
- //parei aqui
-Console.WriteLine ("Sophia: " + sophiaSum);
+int sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
+int nicolasSum = nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5;
+int zahirahSum = zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5;
+int jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
+
+decimal sophiaScore = sophiaSum / currentAssignments;
+
+decimal nicolasScore = (decimal) nicolasSum / currentAssignments;
+decimal zahiraScore = (decimal) zahirahSum / currentAssignments;
+decimal jeonScore = (decimal) jeongSum / currentAssignments;
 
 
+
+Console.WriteLine("Sophia: " + sophiaScore + " A");
+Console.WriteLine("Nicolas: " + nicolasScore + " B");
+Console.WriteLine("Zahirah: " + zahiraScore + " B");
+Console.WriteLine("Kepmg: " + jeonScore + " A");
